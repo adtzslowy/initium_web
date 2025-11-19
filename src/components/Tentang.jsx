@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react'
 
 const steps = [
   {title: "Sejarah Singkat Initium", desc: "Initium dibuat pada Juli 2025 karena adanya masalah untuk mahasiswa baru di dunia IT yang dimana ketika ingin menginstall Visual Studio Code, Laragon, PHP, dan Composer itu sering mengalami kebingungan, jadi saya menciptakan initium ini untuk mempermudah mereka dalam menginstall itu semua."},
-  {title: "Kemudahan Penggunaan", desc: "Initium dibuat untuk mempermudah kalian yang baru join di bidang IT terutama di web-dev menggunakan PHP dan juga Laragon karena bagi yang baru join itu pasti bakalan pusing mencari download linknya."},
+  {title: "Simpel", desc: "Initium dibuat untuk mempermudah kalian yang baru join di bidang IT terutama di web-dev menggunakan PHP dan juga Laragon karena bagi yang baru join itu pasti bakalan pusing mencari download linknya."},
   {title: "Efisiensi Waktu User", desc: "Dengan initium, kalian bisa mempersingkat waktu kalian untuk mendownload dan menginstall tools tersebut dengan hanya menekan nomor tanpa harus ribet memasukkan link seperti di google lagi."}
 ]
 

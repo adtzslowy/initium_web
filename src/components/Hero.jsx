@@ -8,7 +8,6 @@ const Hero = () => {
             const repo = "initium_project";
             const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases`)
 
-            // Cek jika respon sukses
             if (!res.ok) {
                 throw new Error('Gagal mengambil data rilis dari Github')
             }
@@ -40,37 +39,37 @@ const Hero = () => {
     }
 
     const handleGithub = () => {
-        window.open("_blank")
+        window.open("https://github.com/adtzslowy/initium_project")
     }
 
   return (
-    <section className='pt-10 pb-20 '>
+    <section id='/' className='pt-10 pb-60'>
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
                 <h1 className='text-5xl font-bold text-green-black leading-tight font-sansation'>
                     Pengen installasi cepat? <br/>
-                    <span className='text-green-400'>Initium <span class="text-black">solusinya!</span></span>
+                    <span className='text-green-500'>Initium <span className="text-black">solusinya!</span></span>
                 </h1>
 
                 <p className='mt-6 text-xl text-black/70 max-w-xl font-sansation'>
-                    Tools untuk memudahkan proses installasi <span className='text-green-400'>laragon, php, dan composer</span> kamu dengan sangat mudah dan cepat.
+                    Tools untuk memudahkan proses installasi <span className='text-green-500'>laragon, php, dan composer</span> kamu dengan sangat mudah dan cepat.
                     Cukup pakai <span className='text-green-500'>Initium.</span> anda siap mengerjakan proyek website anda!
                 </p>
 
                 <div className="mt-2 flex gap-4 font-jetbrains text-[#fff8ee]">
-                    <button className='px-4 py-2 bg-green-500 cursor-pointer rounded-lg flex items-center gap-2' onClick={handleDownload}>
+                    <button className='px-4 py-2 bg-green-500 hover:bg-green-600 transition-all duration-200 cursor-pointer rounded-lg flex items-center gap-2' onClick={handleDownload}>
                         <Download/>
-                        <span className='text-2xl'>Windows</span>
+                        <span className='text-xl'>Windows</span>
                     </button>
 
-                    <button className='px-4 py-2 bg-green-500 cursor-pointer rounded-lg flex items-center gap-2' onClick={handleGithub}>
-                        <span className='text-2xl'>Github</span>
+                    <button className='px-4 py-2 bg-green-500 hover:bg-green-600 transition-all duration-200 cursor-pointer rounded-lg flex items-center gap-2' onClick={handleGithub} rel='noopener noreferrer'>
+                        <span className='text-xl'>Github</span>
                         <GitBranchIcon/>
                     </button>
                 </div>
             </div>
 
-            <div className="bg-[#1a1a1a] text-green-500 rounded-xl p-6 shadow-2xl border border-black/10">
+            <div className="bg-[#1a1a1a] text-[#fff8ee] rounded-xl p-2 mt-2 shadow-2xl border border-black/10">
                 <div className="flex items-center gap-2 mb-4">
                     <span className="w-3 h-3 bg-red-500 rounded-full"></span>
                     <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
@@ -80,14 +79,11 @@ const Hero = () => {
                 <div className="font-jetbrains text-lg">
                     <span className='text-green-400'>initium@dev$:</span> <a href="https://github.com/adtzslowy/initium_project" className='hover:text-blue-400 transition-all duration-300' target='_blank'>github.com/adtzslowy/initium_project</a>
                     <p className='mt-2'>Detected OS: Windows</p>
-                    <p className='mt-1'>1. NodeJS</p>
-                    <p className='mt-1'>2. Visual Studio Code</p>
-                    <p className='mt-1'>3. Git</p>
-                    <p className='mt-1'>5. Laragon</p>
-                    <p className='mt-1'>6. Docker Desktop</p>
-                    <p className='mt-1'>7. PHP for Laragon</p>
-                    <p className='mt-1'>8. Composer</p>
-                    <p className='mt-1'>9. Update Initium</p>
+                    <p className='mt-1'>1. Visual Studio Code</p>
+                    <p className='mt-1'>2. Laragon</p>
+                    <p className='mt-1'>3. PHP for Laragon</p>
+                    <p className='mt-1'>4. Composer</p>
+                    <p className='mt-1'>5. Update Initium</p>
                     <p className='mt-1'>Masukkan nomor untuk menginstall (0): </p>
                 </div>
 
